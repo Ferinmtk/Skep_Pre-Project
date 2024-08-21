@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papi B Sales</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="cart-count">
+            <span class="cart-icon">🛍️</span> 
+            <span class="cart-items">0</span>
+            <div id="cart-modal" class="cart-modal">
+                <div class="cart-modal-content">
+                    <span id="close-modal" class="close">&times;</span>
+                    <h2>Your Cart</h2>
+                    <ul id="cart-list"></ul>
+                    <button id="checkout-button" class="checkout-button">Checkout</button>
+                </div>
+                <div id="toast">Message</div>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="logo_1.png" alt="Company Logo">
+        </div>
+        <h1>Handmade Crafts</h1>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." id="search-input">
+            <button class="search-button" id="search-button">Search</button>
+        </div>
+    </header>
+
+    <div class="product-page">
+        <main class="main-content">
+            <div class="product-images">
+                <img class="main-image" src="craft_main.jpg" alt="Product Image">
+                <div class="thumbnail-images">
+                    <img src="craft_2.avif" alt="Thumbnail 1">
+                    <img src="craft_3.jpg" alt="Thumbnail 2">
+                    <img src="craft_4.jpg" alt="Thumbnail 3">
+                </div>
+            </div>
+            <div class="product-details">
+                <p class="product-name">Patootie Baskets</p>
+                <p class="product-price">$79.99</p>
+                <p class="product-description">These exquisite sisal baskets are meticulously handcrafted using traditional
+                    Kenyan basket weaving techniques that have been passed down through generations. Each basket is made entirely in Kenya from sustainably-sourced sisal fiber
+                    <br><br>Styles, Sisal baskets, Patters, Storage baskets, Home decor, Florists, Interior designs, Basketry, Interiorstyle, Decor, kiondo,
+                     Home and Interior, Woven decor, handmade, Stylish interior, Texture,
+                     Ethically sourced, Baskets, Bohemian, Interior, Bohochic, Colours, Boho, Kenyan baskets</p>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                    <span>(4/5)</span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </main>
+
+        <section class="customer-reviews">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-list">
+                <div class="review-item">
+                    <p class="review-author">John Doe</p>
+                    <p class="review-text">Amazing product! Really loved the taste and packaging.</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <p class="review-author">Jane Smith</p>
+                    <p class="review-text">Good quality but a bit overpriced.</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <p class="review-author">Alice Brown</p>
+                    <p class="review-text">Decent product, but I expected more flavor.</p>
+                    <div class="rating">
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9733;</span>
+                        <span class="star">&#9734;</span>
+                        <span class="star">&#9734;</span>
+                        <span class="star">&#9734;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="add-review">
+                <h3>Add Your Review</h3>
+                <textarea placeholder="Write your review here..." id="review-text"></textarea>
+                <button class="submit-review">Submit Review</button>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <h2>Related Products</h2>
+            <div class="product-list">
+                <div class="product-item">
+                    <a href="product1.html">
+                        <img src="related_1.jpg" alt="Product 1">
+                        <p class="product-name">Patootie Baskets</p>
+                        <p class="product-price">$49.99</p>
+                    </a>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <a href="product2.html">
+                        <img src="related_2.webp" alt="Product 2">
+                        <p class="product-name">Maasai Pride Bracelets</p>
+                        <p class="product-price">$59.99</p>
+                    </a>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <a href="product3.html">
+                        <img src="related_3.jpg" alt="Product 3">
+                        <p class="product-name">Kilimani Woven Wonders</p>
+                        <p class="product-price">$29.32</p>
+                    </a>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <a href="product14.html"></a>
+                    <img src="related_4.jpg" alt="Product 4">
+                    <p class="product-name">African Silhouette Sunset</p>
+                    <p class="product-price">$29.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+    <a href="https://wa.me/254713247064" target="_blank" class="whatsapp-chat">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi bi-whatsapp" viewBox="0 0 16 16">
+           <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.133.033-.248-.017-.346-.05-.099-.445-1.075-.61-1.474-.16-.39-.323-.337-.445-.344h-.38c-.132 0-.347.05-.528.248-.182.197-.694.678-.694 1.654s.711 1.916.811 2.048c.099.133 1.398 2.136 3.389 2.993.475.205.844.327 1.133.418.476.151.91.13 1.254.079.382-.056 1.17-.478 1.335-.94.165-.462.165-.857.115-.94-.05-.082-.182-.133-.38-.232"/>
+        </svg>
+    </a>
+     
+    <footer class="footer">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="all_products.html">All Products</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav> 
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
